@@ -1,0 +1,11 @@
+﻿@model CodeSanook.SlideWidget.Models.SlideWidgetPart
+    <fieldset>
+        <legend>Slide Widget Setting</legend>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NumberOfItemsInSlide)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.NumberOfItemsInSlide)
+            @Html.ValidationMessageFor(model => model.NumberOfItemsInSlide)
+        </div>
+    </fieldset>

@@ -99,6 +99,11 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Drivers\SlideWidgetPartDriver.cs" />
+    <Compile Include="Handlers\SideWidgetPartHandler.cs" />
+    <Compile Include="Migrations.cs" />
+    <Compile Include="Models\SlideWidgetPart.cs" />
+    <Compile Include="Models\SlideWidgetPartRecord.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -119,14 +124,29 @@
       <Name>Orchard.Core</Name>
       <Private>$(MvcBuildViews)</Private>
     </ProjectReference>
+    <ProjectReference Include="..\CodeSanook.Common\CodeSanook.Common.csproj">
+      <Project>{7104e4b7-0fdc-4734-a812-1c6a8f71635d}</Project>
+      <Name>CodeSanook.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Orchard.Widgets\Orchard.Widgets.csproj">
+      <Project>{194d3ccc-1153-474d-8176-fde8d7d0d0bd}</Project>
+      <Name>Orchard.Widgets</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
-    <Folder Include="Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Parts\SlideWidget.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts\SlideWidget.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Placement.info" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
