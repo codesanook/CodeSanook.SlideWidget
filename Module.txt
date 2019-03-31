@@ -1,0 +1,7 @@
+﻿Name: CodeSanook.SlideWidget
+AntiForgery: enabled
+Author: CodeSanook Team
+Website: http://codesanook.com
+Version: 1.0
+OrchardVersion: 1.0
+Description: Orchard slide widget module for showing slide in home page
